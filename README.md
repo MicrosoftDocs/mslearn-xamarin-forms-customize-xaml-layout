@@ -1,3 +1,7 @@
+# Microsoft Learn: Customize layout in XAML pages
+
+[//]: # (TODO: Link back to Microsoft Learn module.)
+This project contains the source code for the **Customize layout in XAML pages** Microsoft Learn module.
 
 # Contributing
 
