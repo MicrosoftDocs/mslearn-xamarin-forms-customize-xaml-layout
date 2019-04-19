@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Alignment"
+             x:Class="Alignment.MainPage">
+
+    <StackLayout Padding="0,20,0,0">
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Horizontal" VerticalOptions="Center" />
+            <Button Text="Start"  Clicked="OnHorizontalStartClicked"  />
+            <Button Text="Center" Clicked="OnHorizontalCenterClicked" />
+            <Button Text="End"    Clicked="OnHorizontalEndClicked"    />
+            <Button Text="Fill"   Clicked="OnHorizontalFillClicked"   />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Text="Vertical" VerticalOptions="Center" />
+            <Button Text="Start"  Clicked="OnVerticalStartClicked"  />
+            <Button Text="Center" Clicked="OnVerticalCenterClicked" />
+            <Button Text="End"    Clicked="OnVerticalEndClicked"    />
+            <Button Text="Fill"   Clicked="OnVerticalFillClicked"   />
+        </StackLayout>
+
+        <Label x:Name="target" BackgroundColor="Gray" Text="Hello" WidthRequest="150" HeightRequest="150" />
+
+    </StackLayout>
+
+</ContentPage>

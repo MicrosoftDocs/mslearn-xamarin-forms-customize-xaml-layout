@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TipCalculator"
+             x:Class="TipCalculator.MainPage"
+             Padding="40">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Text="Bill" VerticalOptions="Center" />
+        <Entry Grid.Row="0" Grid.Column="1" x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" />
+
+        <Label Grid.Row="1" Grid.Column="0" Text="Tip" />
+        <Label Grid.Row="1" Grid.Column="1" x:Name="tipOutput" Text="0.00" />
+
+        <Label Grid.Row="2" Grid.Column="0" Text="Total" />
+        <Label Grid.Row="2" Grid.Column="1" x:Name="totalOutput" Text="0.00" />
+
+        <Label Grid.Row="3" Grid.Column="0" VerticalOptions="End" HorizontalOptions="Start" Text="Tip Percentage" />
+        <Label Grid.Row="3" Grid.Column="1" VerticalOptions="End" HorizontalOptions="End" x:Name="tipPercent" Text="15%" />
+        <Slider Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" />
+
+        <Button Grid.Row="5" Grid.Column="0" Text="15%" Clicked="OnNormalTip" />
+        <Button Grid.Row="5" Grid.Column="1" Text="20%" Clicked="OnGenerousTip" />
+
+        <Button Grid.Row="6" Grid.Column="0" x:Name="roundDown" Text="Round Down" />
+        <Button Grid.Row="6" Grid.Column="1" x:Name="roundUp"   Text="Round Up" />
+
+    </Grid>
+
+</ContentPage>

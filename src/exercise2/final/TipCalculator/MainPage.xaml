@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TipCalculator"
+             x:Class="TipCalculator.MainPage"
+             Padding="40">
+
+    <StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Bill" VerticalOptions="Center" />
+            <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+            <Label Text="Tip" />
+            <Label x:Name="tipOutput" Text="0.00" />
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Total" />
+            <Label x:Name="totalOutput" Text="0.00" />
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            <Label Text="Tip Percentage" />
+            <Label x:Name="tipPercent" Text="15%" />
+        </StackLayout>
+            
+        <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" />
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="15%" Clicked="OnNormalTip"   HorizontalOptions="CenterAndExpand" />
+            <Button Text="20%" Clicked="OnGenerousTip" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="roundDown" Text="Round Down" HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="roundUp"   Text="Round Up"   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
