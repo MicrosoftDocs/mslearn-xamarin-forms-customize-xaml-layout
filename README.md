@@ -1,7 +1,6 @@
 # Microsoft Learn: Customize layout in XAML pages
 
-[//]: # (TODO: Link back to Microsoft Learn module.)
-This project contains the source code for the **Customize layout in XAML pages** Microsoft Learn module.
+This project contains the source code for the [**Customize layout in Xamarin.Forms XAML pages**](https://docs.microsoft.com/learn/modules/customize-layout-in-xamarin-forms-xaml-pages/) Microsoft Learn module.
 
 # Contributing
 
